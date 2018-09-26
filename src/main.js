@@ -5,8 +5,9 @@ import VueRouter from 'vue-router'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
-
+import Home from './components/Home.vue'
 import Blog from './components/Blog.vue'
+import List from './components/List.vue'
 
 
 
@@ -15,7 +16,9 @@ import Blog from './components/Blog.vue'
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    {name: 'blog', path: '/blog', component: Blog }
+    {name: 'home' , path: '/' , component: Home },
+    {name: 'blog', path: '/blog', component: Blog },
+    {name: 'list' , path: '/list', component: List }
   ]
 })
 

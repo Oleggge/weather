@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="blog">GgGggg</h1>
+        <h1 class="blog">Блог</h1>
     </div>
 </template>
 <script>
