@@ -4,7 +4,11 @@
 			<pre>
 				{{this.hui}}
 			</pre>
+		<div class="block">
+			BLOCK
+		</div>
     </div>
+		
 </template>
 <script>
 export default {
