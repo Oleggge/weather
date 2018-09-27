@@ -14,18 +14,19 @@ export default {
     msg: String
   },
   data() {
-      return {
+    return {
           counter: 0
           
-      }
+    }
 
   }
 }  
 
 </script>
+
 <style scoped>
-h1{
-color: aquamarine;
+h1 {
+	color: aquamarine;
 
 }
 

@@ -2,14 +2,13 @@
   <div id="app">
     <Layout />
     <router-view/>
-      </div>
+  </div>
 </template>
 
 <script>
-// import Home from '@/components/Home'
-import Layout from '@/components/Layout'
+	import Layout from '@/components/Layout'
 
-export default {
+	export default {
   name: 'app',
   components: {
     Layout,
@@ -22,9 +21,8 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  
 }
+
 </style>

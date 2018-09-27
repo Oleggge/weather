@@ -1,12 +1,42 @@
 <template>
     <div>
-        <h1 class="blog">Блог</h1>
+      <h1 class="blog">Блог</h1>
+			<pre>
+				{{this.hui}}
+			</pre>
     </div>
 </template>
 <script>
 export default {
-    name: 'blog'
+		name: 'blog',
+		data() {
+			return {
+				user: 'https://reqres.in/api/users?page=2',
+			  hui: {}
+			}
+		},
+		
+		
+		
+		
+		
+		
+	created() {
+		this.getUserInfo()
+	},
+
+	methods:{
+		getUserInfo () {
+			this.$http.get(this.user).then(response => {
+        this.hui = response.body
+			},response => {
+
+			});
+		}	
+	},
+	  
 }
+
 </script>
 <style>
 .blog{

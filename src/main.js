@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 import Home from './components/Home.vue'
 import Blog from './components/Blog.vue'
 import List from './components/List.vue'
+import Entrance from './components/Entrance.vue'
 
 
 
@@ -18,12 +21,13 @@ const router = new VueRouter({
   routes: [
     {name: 'home' , path: '/' , component: Home },
     {name: 'blog', path: '/blog', component: Blog },
-    {name: 'list' , path: '/list', component: List }
+		{name: 'list' , path: '/list', component: List },
+		{name: 'entrance' , path: '/entrance', component: Entrance }
   ]
 })
 
 new Vue({
-  router,
-  render: h => h(App)
+	router,
+	render: h => h(App)
 }).$mount('#app')
 
