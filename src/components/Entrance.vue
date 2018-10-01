@@ -30,8 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scope>
-
-button {
+	button {
   color:white;
   background-color: black
 }

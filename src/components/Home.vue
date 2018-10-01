@@ -1,11 +1,12 @@
 <template>
-    <div>
+    <div class='weather'>
 			<h1>{{Math.floor(temp - 273.15) }}</h1>
 			<h2 :class="{active: font === 'Times'}"  @click="changeFont">{{city}}</h2>
-			<input v-model="currentCity"/>
-			<div class="button" @click="getWeather">
+			<input class="input" v-model="currentCity"/>
+			<!-- <div class="button" @click="getWeather">
 				Отправить		
-			</div>
+			</div> -->
+			<button @click="getWeather" >Отправить</button>
 		</div>
 </template>
 
@@ -72,7 +73,19 @@ export default {
 	padding: 5px;
 	color:white;
 	background-color: blue;
-
 }
+
+.input {
+	font-size: 15px;
+	padding: 8px;
+	width: 150px;
+	
+}
+
+/* .weather {
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;
+} */
 
 </style>
