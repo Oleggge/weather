@@ -15,9 +15,9 @@ export default {
   },
   data() {
     return {
-          counter: 0
-          
-    }
+      counter: 0
+			
+		}
 
   }
 }  
@@ -27,6 +27,12 @@ export default {
 <style scoped>
 h1 {
 	color: aquamarine;
+}
+button{
+	background-color: rgba(9, 230, 126, 0.6);
+	width: 100px;
+	height:50px;
+	border-radius: 8px;
 }
 
 </style>

@@ -18,9 +18,9 @@ export default {
     msg: String
   },
   data() {
-      return {
-          showPass:false,
-          password:null
+    return {
+      showPass:false,
+      password:null
       }
 
   }
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scope>
+<style scoped>
 	button {
   color:white;
   background-color: black

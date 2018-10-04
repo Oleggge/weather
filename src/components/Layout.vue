@@ -35,7 +35,10 @@ export default {
 	width: 70px;
 	text-align: center;
 	border-radius: 3px;
-	text-decoration: none;      
+	text-decoration: none; 
+	&:hover{
+		color:black;
+	}     
 }
 
 .logo {

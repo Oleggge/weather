@@ -5,6 +5,7 @@ import VueResource from 'vue-resource'
 import VueGeolocation from 'vue-browser-geolocation'
 
 
+
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -14,6 +15,7 @@ import Home from './components/Home.vue'
 import Blog from './components/Blog.vue'
 import List from './components/List.vue'
 import Entrance from './components/Entrance.vue'
+
 
 
 
