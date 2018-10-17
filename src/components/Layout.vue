@@ -24,7 +24,9 @@ export default {
   padding: 10px 10px 10px 50px;
   border-radius:3px;
   display: flex;
-  position: relative;
+  position: fixed;
+	top: 0 ;
+	width: 100%;
 }
 
 .link {
@@ -37,7 +39,7 @@ export default {
 	border-radius: 3px;
 	text-decoration: none; 
 	&:hover{
-		color:black;
+		color: black;
 	}     
 }
 

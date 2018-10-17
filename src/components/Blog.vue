@@ -2,28 +2,28 @@
 	<div>
 		<div class="button1" @click="getUserInfo">Список пользователей</div>
 			<div class="wrapper">
-		<div v-for="(user , index ) in users" :key='index'>
-			<div>
+				<div v-for="(user , index ) in users" :key='index'>
+					<div>
 			{{user.first_name}}
-			</div>
+					</div>
 			<img :src="user.avatar"/>
-		</div>
+				</div>
 			</div>
 		<div class="auth-form">
 			<div class="auth-form_register">
 				Отправить запрос
-				</div>
+			</div>
 			<div class="auth-form_name">
 				Имя
 				<input  type="text" class="auth-form_input" v-model="name">
-				</div>	
+			</div>	
 			<div class="auth-form_job">
 				Работа 
 				<input class="auth-form_input" v-model="job">
-				</div>	
+			</div>	
 			<div>
 				<button class="auth-form_button" @click="submit" >Отправить</button>
-				</div>	
+			</div>	
 		</div>	
 		<div class="blog">Блог</div>
 		<div class="blog1" v-for="(list , index) in lists" :key='index'>
@@ -47,8 +47,7 @@ export default {
 				{ age : '4444444'},
 				{ firstName :'Oleg'},
 				{lastName :'Ololo'}
-			],
-			
+			],	
 		}
 	},
 
@@ -56,8 +55,8 @@ export default {
 		getUserInfo () {
 			this.$http.get(this.user).then(response => {
 				this.users = response.body.data
+				console.log('2323r' , this.users)
 			},response => {
-
 			});
 		},
 
